@@ -7,7 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { CoverageVerificationComponent } from './forms/coverage-verification/coverage-verification.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 
 @NgModule({
@@ -15,13 +15,13 @@ import { CoverageVerificationComponent } from './forms/coverage-verification/cov
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    CoverageVerificationComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent]
